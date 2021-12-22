@@ -1,0 +1,120 @@
+.thinkcake{
+    position: absolute;        
+    top: 56vh;
+    left: 38vw;
+	animation-name: thinkCakeMove;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    transform: scale(0);	
+}
+.thinkcake .corner1{
+	position: absolute;
+	width:5vw;
+	height:5vh;
+	background:#fff;
+	border-radius:100%;
+	left:0vw;
+	top:0vh;
+}
+.thinkcake .corner2{
+	position: absolute;
+	width:5vw;
+	height:5vh;
+	background:#fff;
+	border-radius:100%;
+	left:3vw;
+	top:0vh;
+}
+.thinkcake .corner3{
+	position: absolute;
+	width:5vw;
+	height:5vh;
+	background:#fff;
+	border-radius:100%;
+	left:0vw;
+	top:3vh;
+}
+.thinkcake .corner4{
+	position: absolute;
+	width:5vw;
+	height:5vh;
+	background:#fff;
+	border-radius:100%;
+	left:3vw;
+	top:3vh;
+}
+.thinkcake .cake{
+	position: absolute;
+	left: 2.5vw;
+	top: 2.5vh;
+}
+.thinkcake .cake1{
+	position: absolute;
+	width:3vw;
+	height:2vh;
+	background:green;
+	border-radius:100%;
+	left:0vw;
+	top:2vh;
+}
+.thinkcake .cake2{
+	position: absolute;
+	width:3vw;
+	height:2vh;
+	background:yellow;
+	border-radius:100%;
+	left:0vw;
+	top:1vh;
+}
+.thinkcake .cake3{
+	position: absolute;
+	width:3vw;
+	height:2vh;
+	background:red;
+	border-radius:100%;
+	left:0vw;
+	top:0vh;
+}
+.thinkcake .pupil {
+	position: absolute;
+	left: 3vw;
+	top: 10vh;
+}
+.thinkcake .pupil1{
+	position: absolute;
+	width:0.75vw;
+	height:0.75vh;
+	background:#fff;
+	border-radius:100%;
+	left:0.5vw;
+	top:3vh;
+}
+.pupil2{
+	position: absolute;
+	width:1.5vw;
+	height:1.5vh;
+	background:#fff;
+	border-radius:100%;
+	left:0vw;
+	top:0vh;
+}
+  
+
+@keyframes thinkCakeMove{
+    0% {		
+		transform: scale(0);
+    }
+	20% {
+		height:25vh;
+		transform: scale(0);
+	}
+	25% {
+		height:0;
+		transform: scale(1);
+	}
+	25.1% {
+		transform: scale(0);
+	}
+    100% {        
+    }       
+}

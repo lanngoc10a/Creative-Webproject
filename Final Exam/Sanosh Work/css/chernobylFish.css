@@ -1,0 +1,133 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(80, 205, 255), rgb(3, 55, 90));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chernobylFish {
+    width: 26vh;
+    height: 26vh;
+    position: absolute;
+    content: contain;
+    top: 20%;
+    left: 25%;
+}
+
+.chernobylFish .body {
+    position: absolute;
+    background-color: rgba(126, 136, 63, 1);
+    height: 34vh;
+    width: 50vh;
+    border-radius: 90% 10% 51% 49% / 66% 35% 65% 34%;
+}
+
+.chernobylFish .eye1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 1.4vh;
+    left: 43vh;
+}
+
+.chernobylFish .eye2 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 2.5vh;
+    left: 39vh;
+}
+
+.chernobylFish .eye3 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 2.8vh;
+    left: 35vh;
+}
+
+.chernobylFish .lens1 {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 1);
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    top: 2.5vh;
+    left: 44vh;
+}
+
+.chernobylFish .lens2 {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 1);
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    top: 3.5vh;
+    left: 40.1vh;
+}
+
+.chernobylFish .lens3 {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 1);
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    top: 3.8vh;
+    left: 36vh;
+}
+.chernobylFish .tail1 {
+    position: absolute;
+    background-color: rgba(86, 63, 136,1);
+    height: 4vh;
+    width: 14vh;
+    border: solid black 0.1vh;
+    border-radius: 60% 40% 90% 10% / 33% 30% 70% 67%;
+    top: 15vh;
+    left: -3vh;
+    animation: tailMovmentCF 3s infinite alternate;
+}
+.chernobylFish .tail2 {
+    position: absolute;
+    background-color: rgba(86, 63, 136,1);
+    height: 6vh;
+    width: 10vh;
+    border: solid black 0.1vh;
+    border-radius: 32% 68% 100% 0% / 100% 80% 20% 0% ;
+    top: 1vh;
+    left: 16vh;
+}
+.chernobylFish .upperLip {
+    position: absolute;
+    background-color: rgba(101, 136, 63, 1);
+    height: 2.5vh;
+    width: 8vh;
+    border: solid black 0.1vh;
+    border-radius: 51% 49% 48% 52% / 50% 46% 54% 50% ;
+    top: 10vh;
+    left: 46vh;
+}
+.chernobylFish .lowerLip {
+    position: absolute;
+    background-color: rgba(101, 136, 63, 1);
+    height: 2.5vh;
+    width: 7vh;
+    border: solid black 0.1vh;
+    border-radius: 51% 49% 48% 52% / 50% 46% 54% 50% ;
+    top: 12vh;
+    left: 45.5vh;
+}
+
+
+@keyframes tailMovmentCF {
+    0%{transform: rotate(8deg);}
+    50%{transform: rotate(-8deg);}
+    100%{transform: rotate(8deg);}
+}

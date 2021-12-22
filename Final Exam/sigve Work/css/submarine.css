@@ -1,0 +1,112 @@
+.submarine{
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    content: contain;
+    left: 40vw;
+    top: 40vh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.submarine .body{
+    position: absolute;
+    height: 10vh;
+    width: 8vw;
+    background-color: rgb(214, 214, 28);
+    border-radius: 64% 31% 30% 64% / 47% 40% 41% 45% ;
+    left: 3vw;
+    top: 5vh;
+    border: 0.2vw solid rgb(56, 56, 56);
+}
+.submarine .fins .fin-1{
+    position: absolute;
+    height: 5vh;
+    width: 3.5vw;
+    background-color: rgb(214, 214, 28);
+    border-radius: 11% 73% 20% 34% / 24% 84% 0% 35%;
+    top: 4.5vh;
+    left: 1.5vw;
+    border: 0.2vw solid rgb(56, 56, 56);
+}
+.submarine .fins .fin-2{
+    position: absolute;
+    height: 5vh;
+    width: 3.5vw;
+    background-color: rgb(214, 214, 28);
+    border-radius: 11% 73% 20% 34% / 24% 84% 0% 35%;
+    transform: rotateX(180deg);
+    top: 10.5vh;
+    left: 1.5vw;
+    border: 0.2vw solid rgb(56, 56, 56);
+}
+.submarine .top{
+    position: absolute;
+    height: 4vh;
+    width: 3vw;
+    border-radius: 35% 12% 5% 64% / 100% 9% 83% 0%;
+    background-color: rgb(214, 214, 28);
+    left: 6vw;
+    top: 3vh;
+    border: 0.2vw solid rgb(56, 56, 56);
+}
+
+.submarine .windows {
+    position: absolute;
+    display: flex;
+    top: 7.5vh;
+    left: 4vw;
+}
+.submarine .window {
+    position: relative;
+    height: 3vh;
+    width: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+    border: 0.75vh solid rgb(75, 75, 75);
+    margin-left: 1vw;
+}
+.submarine .periscope{
+    position: absolute;
+    left: 8.5vw;
+    top: 0.5vh;
+}
+
+.submarine .periscope .periscope-bottom{
+    height: 2.5vh;
+    width: 0.3vw;
+    background-color: black;
+    position: absolute;
+}
+.submarine .periscope .periscope-top{
+    height: 1vh;
+    width: 0.7vw;
+    background-color: black;
+    position: absolute;
+}
+.bubble {
+    border-radius: 100%;
+    box-shadow: 0 1vw 1.2vw rgba(0, 0, 0, 0.2), inset 0 0.2vw 0.7vw 1px rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    animation: bobler 10s linear infinite;
+}
+@keyframes bobler {
+    0% {
+        top: 110vh;
+        left: 20px;
+    }
+    8% {
+        left: 80px
+    }
+    25% {
+        left: 25px;
+    }
+    40% {
+        left: 70px;
+    }
+    100% {
+        top: -200px;
+        left: 10px;
+    }
+}

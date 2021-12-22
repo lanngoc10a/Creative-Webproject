@@ -1,0 +1,91 @@
+.seaweed-green {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    top: 79vh;
+    left: 50vw;
+}
+
+.seaweed-green .seaweed1 {
+    position: absolute;
+    left: 8%;
+    width: 14%;
+    height: 60%;
+    top: 20%;
+    background-image: radial-gradient(ellipse at bottom, rgb(0, 122, 27), rgb(0, 53, 20));
+    border-radius: 34% 71% 14% 18% / 83% 72% 5% 5%;
+    transform-origin: bottom;
+    animation: seaweed-green 50s infinite alternate;
+    filter: blur(1px);
+}
+
+.seaweed-green .seaweed2 {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 20%;
+    height: 80%;
+    background-image: radial-gradient(ellipse at bottom, rgb(5, 138, 0), rgb(2, 56, 0));
+    border-radius: 78% 42% 14% 18% / 91% 100% 5% 5%;
+    animation: seaweed-green 25s infinite alternate-reverse;
+    transform-origin: bottom;
+    filter: blur(1px);
+}
+
+.seaweed-green .seaweed3 {
+    left: 20%;
+    position: absolute;
+    width: 20%;
+    height: 90%;
+    background-image: radial-gradient(ellipse at bottom, rgb(0, 187, 16), rgb(0, 59, 3));
+    border-radius: 82% 44% 14% 18% / 83% 72% 5% 5%;
+    animation: seaweed-green 80s infinite alternate;
+    transform-origin: bottom;
+}
+
+.seaweed-green .seaweed4 {
+    top: 70%;
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    background-image: radial-gradient(ellipse at bottom, rgb(0, 187, 16), rgb(0, 59, 3));
+    border-radius: 82% 44% 14% 18% / 83% 72% 5% 5%;
+    animation: seaweed-green 60s infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes seaweed-green {
+    0% {
+        transform: skewX(-5deg);
+    }
+    10% {
+        transform: skewX(8deg);
+    }
+    20% {
+        transform: skewX(-7deg);
+    }
+    30% {
+        transform: skewX(0deg);
+    }
+    40% {
+        transform: skewX(9deg);
+    }
+    50% {
+        transform: skewX(-3deg);
+    }
+    60% {
+        transform: skewX(2deg);
+    }
+    70% {
+        transform: skewX(7deg);
+    }
+    80% {
+        transform: skewX(-5deg);
+    }
+    90% {
+        transform: skewX(8deg);
+    }
+    100% {
+        transform: skewX(5deg);
+    }
+}

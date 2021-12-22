@@ -1,0 +1,269 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+    font-family: batmanFont2;
+}
+
+
+/*
+--------
+Importerer en font fra URL batmanFont
+--------
+*/
+
+@font-face {
+    font-family: batmanFont;
+    src: url(font/batmfo.ttf);
+}
+
+@font-face {
+    font-family: batmanFont2;
+    src: url(font/batmfa.ttf);
+}
+
+
+/*
+--------
+Setter farge på lenken pog batmanTeksten på forsiden
+--------
+*/
+
+h1 {
+    font-family: batmanFont2;
+    color: rgba(248, 245, 83, 0.8);
+}
+
+
+/*
+--------
+to classer av containers for å lage bakgrunnen og bakgrunnen litt lysere, 
+slik at man kan lage lyn-effekten. Lyn effekt er planlagt ved å blinke den 
+øverste conteineren over bakgrunnen. 
+--------
+*/
+
+.conteiner {
+    margin: 0px;
+    position: absolute;
+    background-image: url("../img/index/BG12.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.conteiner2 {
+    margin: 0px;
+    position: absolute;
+    background-image: url("../img/index/BG12.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    animation: lyn 3s alternate infinite;
+    filter: brightness(4);
+    opacity: 0%;
+}
+
+
+/*
+--------
+Conatineren som forsidetekst ligger i stil og animasjoner
+--------
+*/
+
+.textConteiner {
+    position: fixed;
+    position: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -105px;
+    margin-left: -243px;
+    font-size: 50px;
+    animation: fadeIn 6s 1;
+}
+
+.overlay {
+    opacity: 90%;
+}
+
+
+/*
+--------
+en boks med runde hjørner for å lage en "spotlight" som søker rundt på bakgrunnen
+--------
+*/
+
+.spotlight {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 238);
+    box-shadow: 1px 2px 3px rgba(255, 255, 235, 0.4);
+    animation: spot 8s 1;
+    mix-blend-mode: overlay;
+    opacity: 0%;
+}
+
+
+/*
+--------
+En bakgrunnslogo bak teksten som flyr inn og plasserer seg midt på siden
+--------
+*/
+
+#batman1 {
+    animation: flyAni 10s 1 reverse;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -560px;
+    mix-blend-mode: color-burn;
+    opacity: 100%;
+    mix-blend-mode: overlay;
+}
+
+#batman1:hover {
+    opacity: 100%;
+}
+
+
+/* 
+--------
+Keyframes for alle tre animsjonene på siden
+--------
+*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    83% {
+        opacity: 0%;
+    }
+    85% {
+        opacity: 100%;
+    }
+    87% {
+        opacity: 100%;
+    }
+    88% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 100%;
+    }
+    92% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+@keyframes lyn {
+    10% {
+        opacity: 0%;
+    }
+    11% {
+        opacity: 100%;
+    }
+    12% {
+        opacity: 0%;
+    }
+    14% {
+        opacity: 100%;
+    }
+    17% {
+        opacity: 100%;
+    }
+    18% {
+        opacity: 0%;
+    }
+    24% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 100%;
+    }
+    30% {
+        opacity: 100%;
+    }
+    35% {
+        opacity: 0%;
+    }
+}
+
+@keyframes flyAni {
+    0% {
+        opacity: 60%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 60%;
+    }
+    30% {
+        opacity: 100%;
+    }
+    35% {
+        opacity: 90%;
+    }
+    70% {
+        opacity: 100%;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -560px;
+        transform: initial;
+    }
+    100% {
+        top: 130%;
+        opacity: 100%;
+        transform: rotate(20deg) scale(0.2, 0.2);
+        ;
+    }
+}
+
+@keyframes spot {
+    0% {
+        left: 0%;
+        top: -70%;
+        transform: scale(0.3, 0.3);
+    }
+    20% {
+        top: 40%;
+        transform: scale(1, 1);
+        opacity: 100%;
+    }
+    63% {
+        transform: scale(3, 3);
+        left: 42%;
+        top: 30%;
+    }
+    70% {
+        transform: scale(1.3, 1.3)
+    }
+    88% {
+        transform: scale(1, 1);
+        left: 60%;
+        top: 15%;
+    }
+    94% {
+        transform: scale(0.3, 0.3);
+        left: 30%;
+        top: 70%;
+        opacity: 100%;
+    }
+    100% {
+        transform: scale(0, 0);
+        opacity: 0%;
+        left: 30%;
+        top: 100%;
+    }
+}

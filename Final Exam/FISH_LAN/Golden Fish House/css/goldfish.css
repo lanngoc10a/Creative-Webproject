@@ -1,0 +1,170 @@
+.goldfish{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    animation-name: fishMove;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    transform: scale(0.25);	
+}
+.goldfish .tail{
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color: rgb(226, 226, 3);
+    border-radius: 100%;
+    transform: rotate(40deg);
+    left: 3vw;
+}
+.goldfish .tail2{
+    top: 7.5vh;
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    background-color:  rgb(226, 226, 3);
+    border-radius: 100%;
+    transform: rotate(-40deg);
+    left: 3vw;
+}
+.goldfish .body{
+    left: 6.5vw;
+    position: absolute;
+    display: block;
+    width: 12vw;
+    height: 17vh;
+    background-color:  rgb(226, 226, 3);
+    border-radius: 100%
+}
+.goldfish .eye{
+    position: absolute;
+    height: 2.5vh;
+    width: 1.2vw;
+    background-color: black;
+    border-radius: 100%;
+    left: 14.5vw;
+    top: 5.5vh;
+}
+.goldfish .pupil{
+    position: absolute;
+    height: 0.7vh;
+    width: 0.4vw;
+    left: 15vw;
+    top: 6vh;
+    background-color: white;
+    border-radius: 100%;
+}
+.goldfish .fin{
+    position: absolute;
+    margin: 0 auto;
+    width: 3vw;
+    height: 6vh;
+    background-image: repeating-linear-gradient(rgba(141, 125, 125, 0.3), rgba(141, 123, 123, 0.5), rgba(121, 111, 111, 0.3)33%);
+    border-radius: 100% 0px;
+    transform: rotate(0deg);
+    transform-origin: 100% 0%;
+    left: 9vw;
+    top: 12vh;
+    animation-name: finMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.goldfishBubble {
+    border-radius: 100%;
+    box-shadow: 0 1vw 1.2vw rgba(0, 0, 0, 0.2), inset 0 0.2vw 0.7vw 1px rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    animation: fishGoldBobler 2s linear infinite;
+}
+@keyframes finMove{
+    0%{transform: rotate(-5deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(-5deg);}
+}
+/*@keyframes fishMove{
+    0%{top: 40%;}
+    50%{top: 44%;}
+    100%{top: 40%;}
+}*/
+@keyframes fishGoldBobler {
+    0% {
+        top: 95%;
+        left: 20%;
+    }
+    100% {
+        top: 90%;
+        left:-150%;
+    }
+}
+@keyframes fishMove {
+    0% {
+        top: 78vh;
+		left: 78vw;
+		transform: scale(0);
+    }
+	/*Awake*/
+	8%{
+		top: 88vh;
+		left: 67vw;
+		transform: rotate(0deg) rotateY(180deg) scale(0.25);
+	}
+	/*MoveOut*/
+    13% {              
+		top: 88vh;
+		left: 58vw;
+		transform: rotate(0deg) rotateY(180deg) scale(0.25);		
+    }
+	14%{
+		transform: rotate(20deg) rotateY(180deg) scale(0.25);
+	}
+	/*MoveUp*/
+	20% {              
+		top: 74vh;
+		left: 44vw;
+		transform: rotate(20deg) rotateY(180deg) scale(0.25);
+    }
+    26% {
+		top: 74vh;
+		left: 44vw;
+		transform: rotate(0deg) rotateY(180deg) scale(0.25);
+    }
+	28%{
+		transform: rotate(-10deg) rotateY(180deg) scale(0.25);
+	}
+    40% {
+		top: 88vh;
+		left: 14vw;
+		transform: rotate(0deg) rotateY(180deg) scale(0.25);
+    }
+	42% {		
+		transform: rotate(-10deg) rotateY(0deg) scale(0.25);
+	}
+	/*Max Up Right*/
+	65% {
+		top: 34vh;
+		left: 45vw;
+		transform: rotate(-10deg) rotateY(0deg) scale(0.5);
+    }
+	75% {
+		top: 34vh;
+		left: 85vw;
+		transform: rotate(5deg) rotateY(0deg) scale(0.5);
+    }
+	77% {		
+		transform: rotate(-10deg) rotateY(180deg) scale(0.5);
+    }
+	/*MoveDown*/
+    90% {
+		top: 88vh;
+		left: 40vw;
+		transform: rotate(-10deg) rotateY(180deg) scale(0.35);
+    }
+	92% {		
+		transform: rotate(0deg) rotateY(0deg) scale(0.35);
+    }
+	100% {		
+		top: 88vh;
+		left: 67vw;
+		transform: rotate(0deg) rotateY(0deg) scale(0.25);
+    }
+}

@@ -1,0 +1,41 @@
+Retningslinjer (lister med retningslinjer)
+    
+    - Klasser og ider  navngis på engelsk, med camelCase
+
+Ryddighet og struktur
+    - Fargesetting gjøres med RGBA
+    - Inndentering gjøres med TAB. 
+    - Sider navngis til Index og side*nr*.HTML
+    - CSS legges under /style/side*nr*.CSS
+    - Bilder legges under /img/sidenavn/navn.jpeg
+
+Semantikk 
+    - Seksjoner navngis på engelsk
+
+Kommentering gjøres på norsk
+    - CSS kommentarer gjøres med 
+    /*
+    --------
+    TEXT
+    --------
+    */
+
+    
+    - HTML kommentarer gjøres med 
+    <!--
+    --------
+    TEXT
+    --------
+    --!>
+
+
+-Annet 
+    - Alle elementer planlegges/diskuteres på forhånd.
+    - Avgjørelser om endringer i kode gjøres sammen.
+    - All koding gjøres sammen, ved å fysisk sitte sammen eller over nett.
+
+
+
+-Placecholdertext
+----
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aliquam vel quia ratione, excepturi deserunt illum! Provident saepe aliquid est, laudantium maxime quod ullam voluptate ad cumque labore veniam? Deserunt consectetur labore doloribus eligendi eaque aperiam, qui iusto quas perspiciatis nemo aut ullam repudiandae aliquid earum delectus eius! Blanditiis accusamus sunt voluptas cum quas quaerat nisi natus corporis consequatur atque tempore neque voluptatibus ipsa rerum suscipit sed exercitationem, laborum cumque est, fuga magni? Nulla adipisci laboriosam cupiditate odit, eius impedit deserunt eos quasi delectus accusantium excepturi distinctio officiis aut harum ipsam fugiat nemo incidunt temporibus vitae dolor. Enim maiores repudiandae magnam porro, fugit doloribus sunt voluptates expedita aperiam explicabo ullam minus quos laboriosam, sapiente cumque modi aut placeat quam, dolore quo libero quaerat dolorum minima similique. Obcaecati, in delectus. Dolores, laudantium ab quidem corrupti veniam possimus dicta praesentium molestiae? Magnam voluptatibus fuga velit consectetur, assumenda enim repellat corrupti at accusamus molestias! Iure est distinctio beatae, autem hic, velit sint porro, similique molestiae maiores non at odit. Sunt exercitationem perferendis est magni reiciendis, aliquid eum voluptatibus nihil odio molestias quae. Amet corporis natus voluptatum, ut omnis aliquam nulla quod cupiditate modi dicta id, eius ullam mollitia? Nesciunt amet repellendus est quo laboriosam voluptates similique quis exercitationem atque porro dignissimos iusto reiciendis nobis recusandae, iste vero nisi aliquid quidem a velit. Iure velit animi vitae maiores accusamus cumque eaque eveniet! Repellat ipsam totam aut facere architecto neque voluptatem quos nulla nisi officiis distinctio perferendis possimus suscipit sit velit, magni provident eum tempora libero voluptate similique eius at. Porro, tenetur saepe. Minus quisquam ad excepturi! Obcaecati molestias libero explicabo officia earum delectus cumque saepe molestiae nesciunt a reiciendis voluptatibus ipsa rerum, corrupti alias sint mollitia quod deserunt dignissimos officiis soluta vero. Sequi iste fugiat tenetur, autem vitae nihil laboriosam! Tempore natus at aut quis magnam inventore vel odio fuga odit ipsum laudantium numquam sunt ipsam perferendis consectetur illum veniam eligendi, voluptate nihil et explicabo totam nulla. Autem laborum adipisci dolore, beatae impedit tempora tenetur, asperiores eveniet magnam quod saepe suscipit, rem iste explicabo temporibus ut est doloremque. Distinctio et laudantium voluptatum quos, nam, veniam quidem perferendis hic delectus consectetur quod eius deleniti sit, vero sapiente magnam consequatur totam deserunt eos. Sit cumque ea dolorum doloribus quis modi animi hic soluta numquam a assumenda maiores quasi, laborum minus cum dolore recusandae nostrum ex asperiores iure odio, libero, error omnis. Dolore reprehenderit dolorum ad amet architecto eligendi, enim, in veniam aspernatur maxime porro rem corrupti ullam sint ea culpa rerum assumenda est dignissimos laudantium eaque neque nobis veritatis ratione. Nesciunt totam itaque, earum atque rerum vel dolorem expedita qui veniam veritatis! Consequuntur dignissimos nihil neque repellat, tempora impedit eum ut iure corporis, fugit recusandae vitae maxime excepturi, dolor hic. Sed adipisci quidem iusto consectetur in nulla perferendis dolorem! Quis placeat non explicabo fugiat saepe vitae pariatur, architecto magni fuga. Amet nihil unde magnam voluptatibus eius, delectus, ratione ullam id ea inventore necessitatibus officia natus ipsam asperiores cum quas perferendis. Nisi unde soluta illo obcaecati cumque?

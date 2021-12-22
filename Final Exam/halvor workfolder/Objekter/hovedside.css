@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);
+  height: 55vh;
+}
+
+.wave {
+  position: absolute;
+  top: 47%;
+  width: 200vw;
+  height: 8%;
+  background-image: url(images/wave.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  animation: wave 20s linear infinite;
+  z-index: 1;
+}
+
+.water {
+  background-color: rgb(80, 205, 255);
+  position: absolute;
+  bottom: 0;
+  height: 48%;
+  width: 100%;
+  z-index: 1;
+}
+
+.island {
+  position: absolute;
+  top: 44%;
+  left: 0%;
+  height: 20vw;
+  width: 35vw;
+  background-color: rgb(255, 221, 153);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  top: 36%;
+  left: 11%;
+  height: 10vw;
+  width: 10vw;
+  background-color: rgb(255, 170, 0);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  z-index: 1;
+  filter: blur(1px);
+}
+
+.tree-log {
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  height: 10vw;
+  width: 10vw;
+  background-color: rgb(102, 51, 0);
+  border-radius: 68% 32% 50% 50% / 100% 100% 0% 0%;
+  z-index: 0;
+}
+
+.leave {
+  position: absolute;
+  top: 22.5%;
+  left: 12%;
+  height: 10vw;
+  width: 9vw;
+  z-index: 2;
+  transform: skew(5deg);
+  transform-origin: bottom;
+  animation: leafe 3s ease-in-out infinite;
+}
+.skie1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 10vw;
+  height: 2vw;
+  background-color: rgb(255, 255, 255);
+  filter: blur(1.2px);
+  box-shadow: 0px 3px rgb(182, 128, 128);
+}
+
+.skie2 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 10vw;
+  height: 2vw;
+  background-color: rgb(255, 255, 255);
+  filter: blur(1.2px);
+  box-shadow: 0px 3px rgb(182, 128, 128);
+}
+
+.skie3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 10vw;
+  height: 2vw;
+  background-color: rgb(255, 255, 255);
+  filter: blur(1.2px);
+  box-shadow: 0px 3px rgb(182, 128, 128);
+}
+
+.skie4 {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  width: 10vw;
+  height: 2vw;
+  background-color: rgb(255, 255, 255);
+  filter: blur(1.2px);
+  box-shadow: 0px 3px rgb(182, 128, 128);
+}
+
+.skie5 {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 10vw;
+  height: 2vw;
+  background-color: rgb(255, 255, 255);
+  filter: blur(1.2px);
+  box-shadow: 0px 3px rgb(182, 128, 128);
+}
+
+.bubble1 {
+  position: absolute;
+  top: -36%;
+  left: -10%;
+  height: 3vw;
+  width: 3vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.bubble2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  height: 4vw;
+  width: 4vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.bubble3 {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  height: 4vw;
+  width: 4vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.bubble4 {
+  position: absolute;
+  top: -70%;
+  left: 70%;
+  height: 4vw;
+  width: 4vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 100%;
+  top: 53%;
+  left: 0%;
+  z-index: 2;
+  animation: boat 2s ease-in-out infinite;
+}
+
+.canoe {
+  height: 10vw;
+  width: 20vw;
+  border-radius: 0% 50% 25% 25% / 18% 0% 35% 35%;
+  z-index: 3;
+  background-color: rgb(128, 64, 0);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.canoe-cut {
+  height: 6vw;
+  width: 20vw;
+  top: 10%;
+  left: 0%;
+  border-radius: 0% 50% 25% 25% / 18% 0% 35% 35%;
+  z-index: 3;
+  background-color: rgb(80, 205, 255);
+}
+
+.buttonLayout1 { 
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.buttonLayout2 { 
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.deep-water {
+        position: absolute;
+        background-image: linear-gradient(to bottom, rgb(80, 205, 255), rgb(3, 55, 90));
+        height: 35vh;
+        width: 100vw;
+        bottom: 0;
+        z-index: 1;
+}
+
+@keyframes boat {
+  0% {transform: rotate(0deg)}
+  50% {transform: rotate(1deg)}
+  100% {transform: rotate(0deg)}
+}
+
+
+
+@keyframes leafe {
+  0% {transform: rotate(188deg) skew(6deg)}
+  50% {transform: rotate(180deg) skew(-5deg)}
+  100% {transform: rotate(188deg) skew(6deg)}
+}
+
+@keyframes wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}

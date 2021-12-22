@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Din profil</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="visBilder2()">
+
+    <div class="conteiner">
+
+        <header>
+            <h1>FindYourLove</h1>
+            <h2>MinFavoritt!</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="alle-profiler.html">Alle profiler</a></li>
+                <li><a href="profil-forslag.html">Dagens profil</a></li>
+                <li><a href="valgfri-funksjonalitet.html" class="active">MinFavoritt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <form class="favorittRadio" action="submit">
+                <label for="0">Øyvind</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="0"><br>
+                <label for="1">Hans</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="1"><br>
+                <label for="2">Hjalmar</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="2"><br>
+                <label for="3">Maren</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="3"><br>
+                <label for="4">Ina</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="4"><br>
+                <label for="5">Maiken</label>
+                <input onclick="nyFavoritt()" class="checkMark" type="radio" name="innFavoritt" value="5"><br>
+                <label for="SlettFavoritt">Ingen</label>
+                <input onclick="localStorage.clear() + location.reload()" type="radio" class="checkMark" name="innFavoritt" value="SlettFavoritt"><br>
+            </form>
+            <p id="match">
+                <p id="kontaktInfo"> </p>
+            </p>
+        </main>
+
+    </div>
+    <script src="script/valgfri-funksjonalitet.js "></script>
+</body>
+
+</html>

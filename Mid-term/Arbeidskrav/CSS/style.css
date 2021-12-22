@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, serif;
+}
+
+img.frontPageImg {
+    width: 800px;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+a:hover {
+    color: purple;
+    opacity: 20%;
+    transition: 2s;
+}
+
+.sidebar {
+    height: 100vh;
+    background: lightblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#aleximg:hover {
+    opacity: 20%;
+    transition: 0.2s;
+}
+
+.content {
+    padding: 2rem;
+}
+
+#aleximg {
+    padding-top: 30%;
+    border-radius: 50%;
+    max-width: 90%;
+    height: auto;
+    opacity: 100%;
+    animation-duration: 3s;
+}
+
+#frontPageImg {
+    width: 30vw;
+    justify-content: center;
+    position: absolute;
+}

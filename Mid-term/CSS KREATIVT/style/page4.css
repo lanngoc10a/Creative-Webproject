@@ -1,0 +1,286 @@
+/*
+Importerer en font fra URL batmanFont
+*/
+
+@font-face {
+    font-family: batmanFont;
+    src: url(font/batmfo.ttf);
+}
+
+h1.sidebar {
+    font-size: px;
+}
+
+#batManSidebar {
+    opacity: 20%;
+    width: 10vw;
+}
+
+/* Transparent Image
+The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:
+*/
+
+div.textWrap{ opacity: 0.5 ;
+    } 
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 251, 0, 0.8);
+    font-size: 20px;
+}
+
+a:hover {
+    color: rgba(102, 99, 2, 1);
+    opacity: 20%;
+    transition: 0.5s;
+}
+
+.sidebar {
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.8);
+    text-align: center;
+    width: 200px;
+}
+
+.content {
+    padding: 2rem;
+}
+
+@font-face {
+    font-family: batmanFont2;
+    src: url(font/batmfa.ttf);
+}
+
+
+/*
+    ---------
+    Styler body: Ikke mulig og bla på siden
+    setter bakgrunnsbilde
+    gjør at bakgrunnsbilde ikke scroller med siden
+    setter bilde i midten av siden
+    og setter størresle på bilde
+    ---------
+*/
+
+
+/* Hindre scrolling */
+
+
+/* html, body { overflow: hidden}  */
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    background-image: url(../img/lanspage/lanbackground.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: absolute;
+}
+
+
+/*
+    ---------
+    Velger font og farge på teksten
+    ---------
+*/
+
+.text {
+    font-family: batmanfont2;
+    color: rgba(255, 251, 0, 0.8);
+}
+
+
+/*
+    ---------
+    velger posisjon på text
+    setter en border rundt og en "glass" bakgrunn
+    og sentrerer teksten i midten
+    https://www.w3schools.com/cssref/pr_class_position.asp
+
+    ---------
+*/
+
+.textWrap {
+    position: absolute;
+    bottom: 20vh;
+    left: 20vw;
+    width: 60vw;
+    border: solid 5px rgba(0, 0, 0, 1);
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+
+/*
+--------
+Conatineren som forsidetekst ligger i stil og animasjoner. 
+Trenger ikke container her
+--------
+*/
+
+
+/* Styler batgirlcontainer
+        velger størrelse og posisjon 
+        sier at posisjonen skal være absolute mmed left og top*/
+
+
+/* #batgirlcontainer {
+    margin: 0px;
+    position: absolute; 
+    left: 80px;
+    top: 450px;
+    animation: batgirlcontaineranimation 4s forwards;
+    overflow: visible;
+/* } */
+
+/*  
+    ---------
+    Styler batwoman
+        velger størrelse og posisjon 
+        sier at posisjonen skal være fixed
+        gir animasjons navn: batgirl
+            bestemmer hvordan batgirl skal bevege seg
+ ---------
+*/
+
+#batgirl {
+    margin: 0px;
+    left: 50px;
+    top: 0px;  /*  top is in the opposition of bottom, it is used to decide how high or low the figur is*/
+    position: fixed;
+    transform: scale(0.6, 0.6); /* transform scale () brukes for å flytte element */
+    background-image: url("../img/lanspage/batgirl.png");
+    background-repeat: no-repeat;
+    /* animasjonen skal kjøre en gang */
+    animation: batgirlanimation 2s forwards;
+    /* animasjonen skal var i 2 sec */
+    overflow: visible;
+}
+
+@keyframes batgirlanimation {
+    50% {
+        transform: scale(0.6, 0.6) rotate(0) translate(0);
+    }
+    100% {
+        transform: scale(1.3, 1.3) rotate(15deg) translate(600px, 350px);
+        opacity: 100%;
+    }
+}
+
+#bats {
+    animation: batanimation 12s;
+    /* flaggermusene flyr på 12 sekunder */
+    position: fixed;
+    transform: scale(0.25);
+    top: 50%;
+    left: 50%;
+    margin-top: 300px;
+    margin-left: 1060px;
+    mix-blend-mode: color-burn;
+    opacity: 100%;
+    mix-blend-mode: overlay;
+    transition-timing-function: ease-in-out;
+    /* Det går sakt i begynnelse, fort og sakt igjen */
+}
+
+#bats2 {
+    animation: batanimation 12s;
+    position: fixed;
+    transform: scale(0.25);
+    top: 50%;
+    left: 0%;
+    margin-top: 300px;
+    margin-left: 1060px;
+    mix-blend-mode: color-burn;
+    opacity: 100%;
+    mix-blend-mode: overlay;
+}
+
+#bats3 {
+    animation: batanimation 12s;
+    position: fixed;
+    transform: scale(0.25);
+    top: 50%;
+    left: 25%;
+    margin-top: 300px;
+    margin-left: 560px;
+    mix-blend-mode: color-burn;
+    opacity: 100%;
+    mix-blend-mode: overlay;
+}
+
+#bats4 {
+    animation: batanimation 12s;
+    position: fixed;
+    transform: scale(0.25);
+    top: 50%;
+    left: 30%;
+    margin-top: 300px;
+    margin-left: 760px;
+    mix-blend-mode: color-burn;
+    opacity: 100%;
+    mix-blend-mode: overlay;
+}
+
+@keyframes batanimation {
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+        margin-top: -1200px;
+        margin-left: -660px;
+        transform: initial;
+    }
+}
+
+.batwomanlogo {
+    min-height: 20%;
+    max-height: 20%;
+    transform: scale(0);
+    width: auto;
+    top: 35vh;
+    left: 33vw;
+    position: fixed;
+    visibility: hidden;
+    animation: batwomanlogoanimation 5s forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes batwomanlogoanimation {
+    70% {
+        transform: scale(0);
+        visibility: hidden;
+    }
+    90% {
+        transform: scale(1.6);
+        visibility: visible;
+    }
+    100% {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+
+/* Sidebar CSS */
+
+body {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    padding: 0;
+    margin: 0;
+    font-family: batmanFont2, batmanFont, system-ui, serif;
+}

@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(80, 205, 255), rgb(3, 55, 90));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.seafloor {
+    position: absolute;
+    top: 88%;
+    content: contain;
+    width: 100vw;
+}
+
+.seafloor .bank1 {
+    position: absolute;
+    height: 100vw;
+    width: 100vw;
+    background-color: RGB(244, 164, 96, 1);
+    border-radius: 56%;
+    left: 20vw;
+}
+
+.seafloor .bank2 {
+    position: absolute;
+    height: 100vw;
+    width: 100vw;
+    background-color: RGB(244, 164, 96, 1);
+    border-radius: 50%;
+    left: -44vw;
+}
+
+.seafloor .bank3 {
+    position: absolute;
+    height: 100vw;
+    width: 68vw;
+    background-color: RGB(206, 122, 50, 1);
+    border-radius: 50%;
+    top: -5vh;
+    left: 0vw;
+}
+
+.seafloor .bank4 {
+    position: absolute;
+    height: 100vw;
+    width: 50vw;
+    background-color: RGB(206, 122, 50, 1);
+    border-radius: 50%;
+    top: 3vh;
+    left: 70vw;
+}

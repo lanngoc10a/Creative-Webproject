@@ -1,0 +1,84 @@
+.human-container{
+    position: absolute;
+    width: 2vw;
+    height: 20vh;
+    content: contain;
+    transform: rotate(90deg);
+    left: 10%;
+}
+.human-container .human-head{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background-color: black;
+    border-radius: 100%;
+    border: 0.2vh solid rgb(145, 142, 142);
+
+}
+.human-container .human-body{
+    position: absolute;
+    height: 35%;
+    width: 60%;
+    background-color: black;
+    border-radius: 20%;
+    top: 25%;
+    left: 15%;
+    border: 0.2vh solid rgb(145, 142, 142);
+}
+.human-container .leg-1{
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    background-color: black;
+    top: 60%;
+    left: 40%;
+    border: 0.2vh solid rgb(145, 142, 142);
+    transform: skew(-10deg);
+    transform-origin: 50% 0%;
+    animation: legMove1 1s linear infinite;
+}
+.human-container .leg-2{
+    position: absolute;
+    height: 40%;
+    width: 25%;
+    background-color: black;
+    top: 60%;
+    left: 30%;
+    border: 0.2vh solid rgb(145, 142, 142);
+    transform: skew(10deg);
+    transform-origin: 50% 0%;
+    animation: legMove2 1s linear infinite;
+}
+.human-container .goggles{
+    position: absolute;
+    height: 7%;
+    width: 70%;
+    background-color: rgba(226, 226, 226, 0.5);
+    border: 0.1vh solid rgb(245, 113, 113);
+    top: 5%;
+    left: 20%;
+    transform: rotate(-10deg);
+    border-radius: 20%;
+}
+@keyframes legMove1{
+    0%{
+    transform: skew(-15deg);
+    }
+    50%{
+        transform: skew(15deg);
+    }
+    100%{
+        transform: skew(-15deg);
+    }
+}
+@keyframes legMove2{
+    0%{
+    transform: skew(15deg);
+    }
+    50%{
+        transform: skew(-15deg);
+    }
+    100%{
+        transform: skew(15deg);
+    }
+}

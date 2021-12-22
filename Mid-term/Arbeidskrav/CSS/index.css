@@ -1,0 +1,64 @@
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  text-align: center;
+  font-family: system-ui, sans-serif;
+
+}
+
+.visual {
+  height: 400px;
+  width: 100%;
+  background: orange;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+.visual:hover{
+  
+  overflow: visible;
+  }
+.card {
+/*  width: clamp(23ch, 50vw, 46ch);*/
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  padding: 1rem;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#panterimg{
+  width: 30vw;
+  height:auto;
+tem-ui, sans-serif;
+ tion: -10vh;
+}h;
+
+
+/*#button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40%;
+  font-weight: bold;
+}*/
+h1 {
+  font-size: 1.5rem;
+}
+
+#panterimg{
+  width: 20vw;
+  height:auto;
+  offset-position: top -20vw ;
+}

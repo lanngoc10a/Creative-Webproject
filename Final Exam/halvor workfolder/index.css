@@ -1,0 +1,169 @@
+body {
+  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hai {
+  position: absolute;
+  display: flex;
+  width: 450px;
+  animation: hai 4s;
+  animation-iteration-count: infinite;
+}
+
+.fisk {
+  position: absolute;
+  display: flex;
+  top: 25%;
+  left: 45%;
+
+  background-color: blue;
+  width: 250px;
+  height: 250px;
+  animation: example 1s, bevegelse 2s alternate ease-in-out;
+
+  animation-iteration-count: infinite;
+
+  clip-path: polygon(
+    33% 42%,
+    46% 41%,
+    59% 43%,
+    73% 53%,
+    79% 44%,
+    85% 39%,
+    82% 48%,
+    80% 56%,
+    88% 71%,
+    79% 66%,
+    73% 58%,
+    61% 66%,
+    44% 70%,
+    23% 65%,
+    16% 60%,
+    26% 55%,
+    15% 50%,
+    21% 45%
+  );
+}
+
+@keyframes bevegelse {
+  from {
+    top: 5%;
+  }
+  to {
+    top: 80%;
+  }
+}
+
+@keyframes example {
+  0% {
+    clip-path: polygon(
+      33% 42%,
+      46% 41%,
+      59% 43%,
+      73% 53%,
+      79% 44%,
+      85% 39%,
+      82% 48%,
+      80% 56%,
+      88% 71%,
+      79% 66%,
+      73% 58%,
+      61% 66%,
+      44% 70%,
+      23% 65%,
+      16% 60%,
+      26% 55%,
+      15% 50%,
+      21% 45%
+    );
+  }
+
+  25% {
+    clip-path: polygon(
+      33% 42%,
+      46% 41%,
+      59% 43%,
+      73% 53%,
+      79% 44%,
+      85% 39%,
+      82% 48%,
+      80% 56%,
+      88% 71%,
+      79% 66%,
+      73% 58%,
+      61% 66%,
+      44% 70%,
+      23% 65%,
+      15% 54%,
+      26% 55%,
+      15% 55%,
+      21% 45%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      33% 42%,
+      46% 41%,
+      59% 43%,
+      73% 53%,
+      79% 44%,
+      85% 39%,
+      82% 48%,
+      80% 56%,
+      88% 71%,
+      79% 66%,
+      73% 58%,
+      61% 66%,
+      44% 70%,
+      23% 65%,
+      16% 60%,
+      26% 55%,
+      15% 50%,
+      21% 45%
+    );
+  }
+
+  75% {
+    clip-path: polygon(
+      33% 42%,
+      46% 41%,
+      59% 43%,
+      73% 53%,
+      79% 44%,
+      85% 39%,
+      82% 48%,
+      80% 56%,
+      88% 71%,
+      79% 66%,
+      73% 58%,
+      61% 66%,
+      44% 70%,
+      23% 65%,
+      15% 54%,
+      26% 55%,
+      15% 55%,
+      21% 45%
+    );
+  }
+}
+
+@keyframes hai {
+  0% {
+    top: 70%;
+    left: -500px;
+  }
+  49% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+    left: 1200px;
+  }
+  100% {
+    transform: rotateY(180deg);
+    left: -500px;
+  }
+}

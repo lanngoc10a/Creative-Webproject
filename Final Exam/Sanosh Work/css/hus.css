@@ -1,0 +1,81 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(80, 205, 255), rgb(3, 55, 90));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.house {
+    width: 10vw;
+    height: 15vw;
+    position: absolute;
+    content: contain;
+    top: 70vh;
+    left: 24vw;
+}
+
+.house .wall {
+    position: absolute;
+    width: 24vw;
+    height: 12vw;
+    background-color: rgba(0, 70, 3, 1);
+    top: 0;
+    left: 0;
+}
+
+.house .roof {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 14vw solid transparent;
+    border-right: 14vw solid transparent;
+    border-bottom: 7vw solid rgba(160, 82, 45, 1);
+    top: -6.5vw;
+    left: -2vw;
+}
+
+.house .door {
+    position: absolute;
+    width: 5vw;
+    height: 8vw;
+    background-color: rgba(139, 69, 19, 1);
+    top: 4vw;
+    left: 1vw;
+}
+
+.house .frame {
+    position: absolute;
+    width: 14vw;
+    height: 4vw;
+    background-color: rgba(139, 69, 19, 1);
+    top: 4vw;
+    left: 8vw;
+    border-radius: 2%;
+}
+.house .pane1 {
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    background: linear-gradient(
+        -60deg,
+        rgba(0,159,255,0.7) 73px,
+        rgba(255, 255, 0, 0.8),
+        rgba(0,159,255,0.7)80px);
+    top: 4.5vw;
+    left: 8.5vw;
+    border: rgba(0,159,255,0.7);
+    border-radius: 4%;
+}
+.house .pane2 {
+    position: absolute;
+    width: 6vw;
+    height: 3vw;
+    background: linear-gradient(
+        -60deg,
+        rgba(0,159,255,0.7) 27px,
+        rgba(255, 255, 0, 0.8),
+        rgba(0,159,255,0.7)35px);
+    top: 4.5vw;
+    left: 15.5vw;
+    border: rgba(0,159,255,0.7);
+    border-radius: 4%;
+}

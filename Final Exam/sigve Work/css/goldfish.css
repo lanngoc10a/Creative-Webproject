@@ -1,0 +1,84 @@
+.goldfish{
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    width: 20vw;
+    height: 20vh;
+    content: contain;
+    animation-name: fishMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(0.75);
+}
+.goldfish .tail{
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    background-color: rgb(226, 226, 3);
+    border-radius: 100%;
+    transform: rotate(40deg);
+    left: 15%;
+}
+.goldfish .tail2{
+    top: 50px;
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    background-color:  rgb(226, 226, 3);
+    border-radius: 100%;
+    transform: rotate(-40deg);
+    left: 15%;
+}
+.goldfish .body{
+    left: 32.5%;
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 85%;
+    background-color:  rgb(226, 226, 3);
+    border-radius: 100%
+}
+.goldfish .eye{
+    position: absolute;
+    height: 12.5%;
+    width: 8%;
+    background-color: black;
+    border-radius: 100%;
+    left: 72.25%;
+    top: 25%;
+}
+.goldfish .pupil{
+    position: absolute;
+    height: 3.5%;
+    width: 2%;
+    left: 77%;
+    top: 30%;
+    background-color: white;
+    border-radius: 100%;
+}
+.goldfish .fin{
+    position: absolute;
+    margin: 0 auto;
+    width: 15%;
+    height: 30%;
+    background-image: repeating-linear-gradient(rgba(141, 125, 125, 0.3), rgba(141, 123, 123, 0.5), rgba(121, 111, 111, 0.3)33%);
+    border-radius: 100% 0px;
+    transform: rotate(0deg);
+    transform-origin: 100% 0%;
+    left: 45%;
+    top: 60%;
+    animation-name: finMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes finMove{
+    0%{transform: rotate(-5deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(-5deg);}
+}
+@keyframes fishMove{
+    0%{top: 40%;}
+    50%{top: 44%;}
+    100%{top: 40%;}
+}

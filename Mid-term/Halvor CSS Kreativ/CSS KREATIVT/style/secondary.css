@@ -1,0 +1,362 @@
+@font-face {
+  font-family: batmanFont;
+  src: url(font/batmfo.ttf);
+}
+
+@font-face {
+  font-family: batmanFont2;
+  src: url(font/batmfa.ttf);
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  padding: 0;
+  margin: 0;
+  font-family: batmanFont2, batmanFont, system-ui, serif;
+}
+
+@font-face {
+  font-family: batmanFont;
+  src: url(font/batmfo.ttf);
+}
+
+#batManSidebar {
+  opacity: 20%;
+  width: 10vw;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 251, 0, 0.8);
+}
+
+a:hover {
+  color: rgba(102, 99, 2, 1);
+  opacity: 20%;
+  transition: 0.5s;
+}
+
+.sidebar {
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.8);
+  text-align: center;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.hero {
+  left: -280px;
+  height: 100vh;
+  width: 119%;
+  background-image: url(../img/number2/night2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.highway {
+  height: 200px;
+  width: 500%;
+  display: block;
+  background-image: url(../img/number2/road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url(../img/number2/city.png);
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+.car {
+  width: 400px;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+  animation: slide 5s infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 0px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.wheel {
+  left: 50%;
+  bottom: 178px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.wheel img {
+  width: 72px;
+  height: 72px;
+  animation: wheel 1s linear infinite;
+}
+
+.back-wheel {
+  top: -3px;
+  left: -151px;
+  position: absolute;
+}
+
+.front-wheel {
+  top: 10px;
+  left: 87px;
+  position: absolute;
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moon {
+  height: 220px;
+  top: 10px;
+  position: absolute;
+}
+
+.joker {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: -40px;
+  height: 200px;
+  opacity: 0;
+}
+
+.batBat {
+  height: 70px;
+  top: 50%;
+  opacity: 0.9;
+  z-index: 3;
+  position: absolute;
+ animation: batBat 1s infinite;
+}
+
+
+
+.joker:hover {
+  animation: joker 2s infinite;
+}
+
+@keyframes batBat {
+  from {
+      left: -100px;
+  }
+  to {
+      left: -2000px;
+  }
+}
+
+/* @keyframes batBat {
+    10% {
+  top: 200px;
+  left: 70px;
+  opacity: 0.9;
+    }
+    25% {
+       top: 790px;
+  left: 1000px;
+    }
+    30% {
+       top: 790px;
+  left: 900px;
+    }
+    40% {
+      top: 790px;
+  left: 800px;
+    }
+    50% {
+      top: 790px;
+  left: 700px;
+    }
+    60% {
+       top: 790px;
+  left: 600px;
+    }
+    70% {
+       height: 70px;
+  top: 700px;
+  left: 600px;
+    }
+    80% {
+       top: 700px;
+  left: 700px;
+    }
+    90% {
+      top: 700px;
+  left: 800px;
+    }
+    100% {
+       top: 700px;
+  left: 900px;
+    }
+  } */
+
+
+@keyframes joker {
+  10% {
+    opacity: 0%;
+  }
+  11% {
+    opacity: 20%;
+  }
+  12% {
+    opacity: 0%;
+  }
+  14% {
+    opacity: 20%;
+  }
+  17% {
+    opacity: 20%;
+  }
+  18% {
+    opacity: 0%;
+  }
+  24% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 20%;
+  }
+  30% {
+    opacity: 20%;
+  }
+  35% {
+    opacity: 0%;
+  }
+}
+
+.batLight {
+  width: 150px;
+  left: 44%;
+  bottom: 154px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+  animation: batLight 1s infinite;
+  filter: saturate(0);
+}
+
+@keyframes batLight {
+  0% {
+    filter: saturate(0);
+  }
+  10% {
+    filter: saturate(10);
+  }  
+}
+
+
+.jokerRunning {
+  height: 120px;
+  top: 76%;
+  right: 100px;
+  z-index: 3;
+  position: absolute;
+  animation: jokerRunner 5s infinite;
+}
+
+.batmanRunning {
+  height: 200px;
+  top: 70%;
+  right: 300px;
+  z-index: 3;
+  position: absolute;
+  
+}
+
+/* .robin {
+  height: 200px;
+  top: 70%;
+  right: 600px;
+  z-index: 3;
+  position: absolute;
+
+} */
+
+
+
+/* @keyframes jokerRunner {
+  25% {
+    top: 76%;
+  right: 100px;
+  }
+  50% {
+    top: 76%;
+    right: 250px;
+  }
+  75% {
+    top: 76%;
+  right: 150px;
+  }
+  100% {
+    top: 76%;
+  right: 100px;
+  }
+} */

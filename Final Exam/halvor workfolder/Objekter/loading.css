@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff);
+  height: 100vh;
+}
+
+/* .header {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 10%;
+  color: blue;
+  font-family: sans-serif;
+  font-size: x-large;
+} */
+
+.wave-fill {
+    height: 150px;
+    width: 150px;
+    color: #ccc;
+    -webkit-mask-image: url(/halvor\ workfolder/Objekter/images/pngegg.png);
+    -webkit-mask-size: contain;
+}
+
+span {
+    display: block;
+    width: 100%;
+}
+
+.wave {
+    background-image: url(/halvor\ workfolder/Objekter/images/wave.png);
+    height: 20px;
+    background-size: contain;
+    animation: wave 10s;
+   
+}
+.deep-water {
+    background: rgb(4, 103, 246);
+    height: 200px;
+   
+}
+
+@keyframes wave{
+    from {background-position: 0px, 0px;}
+
+    to {background-position: 1000px, 0px ;}
+}
+
+.water {
+    animation: water 10s ;
+}
+
+@keyframes water{
+    from {transform: translateY(100%);}
+    to {transform: translateY(-10%);}
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+}
+
+
+

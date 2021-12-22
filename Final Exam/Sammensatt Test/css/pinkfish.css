@@ -1,0 +1,135 @@
+.pinkfish {
+    position: absolute;
+    contain: content;
+    top: 30vh;
+    left: 40vw;
+    animation: pinkmove 5s infinite alternate;
+}
+
+.pinkfish .fishybody {
+    position: absolute;
+    background-image: radial-gradient( rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    border-radius: 39% 61% 62% 38% / 34% 45% 55% 66%;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+}
+
+.pinkfish .eye {
+    border-radius: 64% 36% 61% 39% / 34% 43% 57% 66%;
+    width: 12%;
+    height: 5%;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.pinkfish .iris {
+    border-radius: 64% 36% 61% 39% / 34% 43% 57% 66%;
+    width: 2%;
+    height: 3%;
+    background-color: black;
+    position: absolute;
+    left: 21%;
+    top: 21%;
+    animation: pinkeye 5s ease-in-out 5 alternate;
+}
+
+.pinkfish .lip1 {
+    border-radius: 54% 46% 21% 79% / 62% 52% 48% 38%;
+    width: 15%;
+    height: 5%;
+    background-image: radial-gradient(rgba(245, 0, 0, 1), rgba(50, 0, 0, 1));
+    position: absolute;
+    left: 3%;
+    top: 68%;
+    transform-origin: 80% 100%;
+    animation: pinkmouth 2s ease-in-out alternate infinite;
+    transform: rotate(-10deg);
+}
+
+.pinkfish .lip2 {
+    border-radius: 66% 34% 35% 65% / 26% 52% 48% 74%;
+    width: 15%;
+    height: 5%;
+    background-image: radial-gradient( rgba(245, 0, 0, 1), rgba(50, 0, 0, 1));
+    position: absolute;
+    left: 3%;
+    top: 70%;
+    transform-origin: 100% 0%;
+    animation: pinkmouth 2s ease-in-out alternate-reverse infinite;
+    transform: rotate(-10deg);
+}
+
+.pinkfish .tail {
+    border-radius: 66% 34% 35% 65% / 26% 52% 48% 74%;
+    width: 35%;
+    height: 90%;
+    background-image: repeating-linear-gradient(rgba(240, 204, 204, 0.1), rgba(240, 204, 204, 0.7), rgba(240, 204, 204, 0.1)33%);
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    animation: pinktail 2s alternate infinite;
+    transform-origin: 0% 50%;
+}
+
+.pinkfish .fin {
+    border-radius: 43% 57% 12% 88% / 17% 25% 75% 83%;
+    width: 30%;
+    height: 25%;
+    background-color: rgba(240, 204, 204, 0.6);
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    transform: rotate(0deg) skewX(10deg);
+    transform-origin: 0% 20%;
+    animation: pinkfin alternate 3s infinite;
+}
+
+
+/*animasjoner for rosa fisk*/
+
+@keyframes pinkfin {
+    to {
+        transform: rotate(-30deg) skewx(-10deg)
+    }
+}
+
+@keyframes pinkmouth {
+    0% {
+        transform: skewY(-10deg)
+    }
+    100% {
+        transform: rotate(-20deg)
+    }
+}
+
+@keyframes pinktail {
+    0% {
+        transform: skewY(10deg)
+    }
+    100% {
+        transform: skewY(-15deg)
+    }
+}
+
+@keyframes pinkeye {
+    0% {
+        left: 24%;
+    }
+    8% {
+        left: 21%;
+    }
+}
+
+@keyframes pinkmove {
+    0% {
+        top: 30vh;
+        left: 40vw;
+    }
+    100% {
+        top: 40vh;
+        left: 30vw;
+    }
+}

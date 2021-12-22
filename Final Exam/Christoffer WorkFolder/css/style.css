@@ -1,0 +1,71 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(80, 205, 255), rgb(3, 55, 90));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.neste {
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transition: 0.3s;
+}
+
+.forrige {
+    top: 20px;
+    right: 120px;
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    transition: 0.3s;
+}
+
+.forrige:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.neste:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.bubble {
+    border-radius: 100%;
+    box-shadow: 0 1vw 1.2vw rgba(0, 0, 0, 0.2), inset 0 0.2vw 0.7vw 1px rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    animation: bobler 10s linear infinite;
+}
+
+.pinkfish {
+    width: 500px;
+    height: 500px;
+}
+
+@keyframes bobler {
+    0% {
+        top: 110vh;
+        left: 20px;
+    }
+    8% {
+        left: 80px
+    }
+    25% {
+        left: 25px;
+    }
+    40% {
+        left: 70px;
+    }
+    100% {
+        top: -200px;
+        left: 10px;
+    }
+}

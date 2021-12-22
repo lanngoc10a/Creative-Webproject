@@ -1,0 +1,10 @@
+spm1:
+Posisjonering, avrunding av kanter,lage knapper som ser fine ut, Linker og bilder i HTML. 
+Hvordan lage en meny med site og css. 
+sp2:
+Zoom har vært en utfordring, men med dyktige forelesere og opplegg med jobbing på egenhånd under forelesningen, gjør læringsutbyttet ok.
+Gruppearbeid har vært nyttig, for å øke utbyttet. 
+spm3:
+Posisjonering ift relative, absolute, fixed etc  har vært en utfordring. 
+Animasjoner tar mye tid å finne riktig posisjon.
+Det har også vært veldig utfordrende med samarbeid i kohorten uten å kunne møte fysisk. 

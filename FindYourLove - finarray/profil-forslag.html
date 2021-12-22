@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Et forslag</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <header>
+            <h1>FindYourLove</h1>
+            <h2>Alle profiler</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="alle-profiler.html">Alle profiler</a></li>
+                <li><a href="profil-forslag.html" class="active">Dagens profil</a></li>
+                <li><a href="valgfri-funksjonalitet.html">MinFavoritt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <form id=inputForm>
+                    <label>Tast inn ønsket alder</label><br>
+                    <input type="text" id="alder"><br>
+                    <label>Mann eller kvinne?</label><br>
+                    <input type="radio" class="checkMark" name="kjonn" value="Mann">
+                    <input type="radio" class="checkMark" name="kjonn" value="Kvinne"><br>
+                    <input type="button" onclick="randomPerson()" value="Vis forslag">
+
+                </form>
+            </section>
+
+            <section>
+
+                <p id="match">
+
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="script/profil-forslag.js"></script>
+</body>
+
+</html>

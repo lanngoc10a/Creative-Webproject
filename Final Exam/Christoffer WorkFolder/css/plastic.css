@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.plastic-bottle {
+    width: 3vw;
+    height: 8vw;
+    position: absolute;
+    left: 10vw;
+    top: 10vw;
+    overflow: hidden;
+}
+
+.plastic-bottle .cork {
+    position: absolute;
+    left: 15%;
+    width: 40%;
+    height: 10%;
+    background-color: rgb(116, 0, 0);
+    border-radius: 50% 50% 50% 50% / 80% 80% 50% 50%;
+}
+
+.plastic-bottle .flask {
+    position: absolute;
+    top: 5%;
+    width: 70%;
+    height: 90%;
+    border-top-left-radius: 2vw 4vw;
+    border-top-right-radius: 2vw 4vw;
+    border-bottom-left-radius: 0.625vw 1.25vw;
+    border-bottom-right-radius: 0.62vw 1.25vw;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@font-face {
+    font-family: "LOKICOLA";
+    src: url("LOKICOLA.TTF");
+}
+
+.plastic-bottle .coke-label {
+    position: absolute;
+    top: 17%;
+    width: 70%;
+    height: 20%;
+    background-color: rgb(136, 1, 1);
+    border-top-left-radius: 0.7vw 5vw;
+    border-top-right-radius: 0.7vw 5vw;
+    display: flex;
+    padding-top: 0.5vw;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 1);
+    font-family: LOKICOLA;
+    align-items: center;
+    font-weight: lighter;
+    font-size: small;
+}

@@ -1,0 +1,25 @@
+.more-info {
+    border-radius: 0.5vw;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1vw;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.more-info:hover .textbox {
+    visibility: visible;
+    height: 8vh;
+    transition: ease-in-out 0.4s;
+}
+
+.textbox {
+    visibility: hidden;
+    height: 0vh;
+    transition: ease-in-out 0.4s;
+}

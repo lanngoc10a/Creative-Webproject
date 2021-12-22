@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+    background-image: url(../img/nightstreet.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
